@@ -8,6 +8,7 @@ import scobici.andrei.rentcar.service.CarService;
 import java.util.List;
 
 @Controller
+@RequestMapping(path = "api/v1/cars")
 public class CarController {
     private final CarService carService;
 
