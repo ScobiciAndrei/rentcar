@@ -4,10 +4,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import scobici.andrei.rentcar.models.Person;
 import scobici.andrei.rentcar.service.PersonService;
-
 import java.util.List;
 
-@Controller
+@CrossOrigin(origins = "http://localhost:4200")
+@RestController
 @RequestMapping(path = "api/v1/persons")
 public class PersonController {
     private final PersonService personService;
@@ -17,7 +17,7 @@ public class PersonController {
     }
 
     @PostMapping(path = "/add")
-    public Person save(Person person) {
+    public Person save(@RequestBody Person person) {
 
         return personService.save(person);
     }

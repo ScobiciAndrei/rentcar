@@ -4,10 +4,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import scobici.andrei.rentcar.models.Car;
 import scobici.andrei.rentcar.service.CarService;
-
 import java.util.List;
 
-@Controller
+@CrossOrigin(origins = "http://localhost:4200")
+@RestController
 @RequestMapping(path = "api/v1/cars")
 public class CarController {
     private final CarService carService;
