@@ -1,0 +1,25 @@
+nav {
+    background-color: #333;
+    padding: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10;
+    display: flex;
+  }
+  
+  li {
+    margin-right: 30px;
+  }
+  
+  a {
+    color: rgb(220, 208, 208);
+    text-decoration: none;
+  }
+  
+  a.active {
+    font-weight: bold;
+    text-decoration: underline;
+  }
