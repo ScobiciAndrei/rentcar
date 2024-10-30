@@ -20,3 +20,8 @@
 .imagine-grid {
   width: 100%;
 }
+
+.introducere{
+  display: grid;
+  text-shadow: 1cap;
+}
